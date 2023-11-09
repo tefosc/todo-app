@@ -12,6 +12,10 @@ function CompletTodo({ item }) {
       className={status ? "line-through" : ""}
     >
       {item.text}
+      <br />
+      <span className="ml-4 text-sm text-red-500 font-bold">
+        {item.description}
+      </span>
     </a>
   );
 }
